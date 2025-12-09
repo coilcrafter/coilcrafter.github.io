@@ -1,9 +1,11 @@
 # Introduction #
 
-This site is a documentation of my experiments. I build Tesla coils and high-voltage circuits from scratch, often with weird constraints like, "*no driver ICs*," "*no epoxy*," "*no measurement devices*," or "*let's see what happens if I just... try it*."  I share circuit designs, experimental notes, observations, and the ocassional unexpected arcs.
+I believe, **Research** is the craft of shaping questions into stories that never truly end. Each experiment becomes a chapter, each observation a line in a longer narrative carried forward by curiosity.
 
-Everything here is self-built, self-tested and driven by curiosity. Sometimes things work beutifully, sometimes they explode. The thrill of seeing glowing arcs keeps me chasing better and bolder versions of Tesla coils - each one gets a name: *Mark I*, *Mark II*, *Mark III* etc. Each version has its own specifications and circuit. 
+What I build here—Tesla coils, high-voltage circuits, and other experimental setups—is part of that ongoing story. Every project is self-designed and tested from first principles, guided by an interest in understanding how physical systems behave when pushed to their limits. Some designs perform exactly as expected; others reveal their lessons in more surprising ways. But each iteration brings a clearer understanding.
 
-If you are into weird builds, unconventional design approaches, and a bit of creative chaos in electronics, or just want to see what happens when curiosity meets high-voltage, then you are at the right place. No team, no lab funding - just a soldering iron, some stubbornness, and love for things that hum, glow, and ocassionally blow up.
+Over time, these experiments have taken form as progressively refined Tesla coil designs—*Mark I, Mark II, Mark III,…..*—each with its own circuit architecture, constraints, and performance characteristics. My focus is not only on building these systems but on documenting how they work, why they work, and how their behaviour changes with different design choices.
 
-**Disclaimer:** *Built for sparks. Not for safety*.
+This site serves as a technical record: circuit diagrams, construction notes, measurements, analysis, and reflections on unexpected outcomes. It is meant for anyone who appreciates systematic experimentation, unconventional problem-solving, and the process of learning by building.
+
+If your interest lies in how ideas evolve into functioning hardware—and how each iteration opens a new chapter—then you may find this space worth exploring.
