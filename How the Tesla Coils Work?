@@ -1,0 +1,33 @@
+# How the Tesla coils work?
+
+Tesla coils are devices used to generate high-frequency, high-voltage electricity. Their working principle is essentially the same as that of a transformer — in fact, they are a special type of air core transformer. A Tesla coil has its primary coil driven by an external circuit at a specific frequency, and a secondary coil that is inductively coupled to the primary. When the current through the primary changes, it creates a varying magnetic field, which then induces an electromotive force (EMF) across the secondary via mutual inductance.
+
+In a typical setup, the secondary coil is placed vertically, with its lower end grounded and the upper end left open in the air. You might wonder — how does the circuit complete if the top end isn't connected to anything? Interestingly, the upper end forms a stray capacitance with the surrounding environment. 
+
+The floating terminal of the Tesla coil generates a strong alternating electromagnetic field capable of ionizing nearby air molecules, producing striking plasma discharges. Since the output is high-frequency AC, this terminal oscillates with a sinusoidal voltage. At the positive peak, it attracts free electrons from the surrounding air; at the negative peak, it draws in positive ions. This alternating charge exchange mimics the behavior of a capacitor formed between the coil’s top end and its surroundings. To enhance this interaction and control the electric field geometry, a smooth, conductive structure called a topload is often added at the top.
+
+ The topload can be of any shape, but it's important that its surface is smooth, without sharp edges — since sharp points concentrate the electric field and cause premature ionization. This is why discharges often emerge from sharp edges first.
+
+The secondary coil, in combination with this parasitic (or stray) capacitance, forms an LC circuit that resonates at a particular frequency. This is the frequency at which the primary coil should ideally oscillate for efficient energy transfer.
+
+What happens when you add a larger topload? It increases the effective capacitance, which in turn lowers the resonant frequency of the LC circuit. Lower resonant frequencies generally make Tesla coils easier to drive and more energy efficient.
+
+Although Tesla coils are famous for their dramatic lightning-like discharges, it's worth noting that these plasma arcs actually represent energy loss. You’re essentially feeding energy into the coil just to ionize the surrounding air. If you aim to minimize this discharge and improve efficiency, a large, smooth topload helps. Later, if you want to see the iconic arcs, you can always attach a pointed wire or other conductor to the topload to allow visible discharges.
+
+# How Slayer Exciter works?
+
+A Slayer Exciter is the simplest circuit one can use to drive a Tesla coil. It is a self-oscillating circuit that uses direct feedback from the secondary base to switch the MOSFET or transistor at super high frequency. 
+
+![image.png](attachment:54a07654-2f27-4969-b92f-00322f8b959e:image.png)
+
+When the power is turned on, a small current flows through the base resistor, turning the transistor ON. This allows the transistor to conduct current through the primary coil. As the current in the primary coil increases, so does the magnetic field. Through mutual inductance, the secondary coil reacts to this changing magnetic field and generates a very high voltage according to the number of turns, field strength, and coupling factor. The lower end of the secondary is directly connected to the base of the transistor, providing positive feedback that adds more current to the base, thereby further increasing the current through the primary coil.
+
+However, there comes a point when the current through the primary coil saturates, and the core can no longer support a significantly changing magnetic field. At this point, the output of the secondary drops to zero, since a changing magnetic field is required for electromagnetic induction. As a result, the additional base current provided by the secondary disappears, causing the transistor to conduct less current. This reduction in primary current leads to a collapsing magnetic field, which induces a voltage in the secondary coil in the opposite direction.
+
+The voltage induced in the secondary now acts as negative feedback, drawing current away from the transistor base and turning the transistor completely OFF. This stops current from flowing in both the primary and secondary coils.
+
+The base resistor again conducts a small current from the power supply, turning the transistor ON and starting the cycle anew. This process repeats, driving the Tesla coil at the resonant frequency of the secondary coil.
+
+As a switching device, one can also use a MOSFET that is a voltage-controlled device, unlike a transistor (which is current-controlled). Besides that, the work is more or less the same.
+
+Building high-performance Tesla coils is an exciting mix of RF engineering, power electronics, and physics. With the right precautions and design choices, you can significantly boost both safety and efficiency. There is just no end to how much you can improve your circuit.
